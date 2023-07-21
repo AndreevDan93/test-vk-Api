@@ -1,0 +1,37 @@
+
+
+databaseChangeLog:
+- changeSet:
+    id: 1689976853513-1
+    author: andreevdan83 (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: user_infoPK
+            name: id
+            type: BIGINT
+        - column:
+            name: user_city
+            type: VARCHAR(255)
+        - column:
+            name: user_b_date
+            type: TIMESTAMP(6)
+        - column:
+            name: user_f_name
+            type: VARCHAR(255)
+        - column:
+            name: user_l_name
+            type: VARCHAR(255)
+        - column:
+            name: user_contacts
+            type: VARCHAR(255)
+        - column:
+            name: user_id
+            type: BIGINT
+        tableName: user_info
+
