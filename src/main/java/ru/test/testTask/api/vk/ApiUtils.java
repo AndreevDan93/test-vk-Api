@@ -3,8 +3,6 @@ package ru.test.testTask.api.vk;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import kong.unirest.HttpResponse;
-import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,7 +15,7 @@ import java.util.List;
 public class ApiUtils {
 
     @Autowired
-    public ApiUtils(@Value("${vk.api.url}") String baseVkUrl) {
+    public ApiUtils(@Value("${vk-api-url}") String baseVkUrl) {
         Unirest.config().defaultBaseUrl(baseVkUrl);
     }
 

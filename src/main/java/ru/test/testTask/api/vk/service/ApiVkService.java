@@ -19,9 +19,9 @@ public class ApiVkService {
     private final ApiUtils apiUtils;
 
     @Autowired
-    public ApiVkService(@Value("${vk.api.access_token}") String accessToken,
-                        @Value("${vk.api.version}") String apiVersion,
-                        @Value("${vk.api.fields}") String fields,
+    public ApiVkService(@Value("${vk-api-access_token}") String accessToken,
+                        @Value("${vk-api-version}") String apiVersion,
+                        @Value("${vk-api-fields}") String fields,
                         ApiUtils apiUtils) {
         this.accessToken = accessToken;
         this.apiVersion = apiVersion;
