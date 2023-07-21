@@ -1,1 +1,1 @@
-web: ./build/install/zonasb/bin/zonasb
+web: ./build/install/testTask/bin/testTask
