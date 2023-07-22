@@ -16,7 +16,6 @@ import java.util.List;
 @RequestMapping("${base-url}" + UserController.USER_CONTROLLER_PATH)
 public class UserController {
     public static final String USER_CONTROLLER_PATH = "/users";
-    public static final String ID = "/{id}";
     private final UserService userService;
 
     @GetMapping()

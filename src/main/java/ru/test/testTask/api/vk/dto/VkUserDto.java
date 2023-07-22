@@ -19,7 +19,6 @@ public class VkUserDto {
     @JsonProperty("last_name")
     private String lastName;
     @JsonProperty("bdate")
-//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "d.M.yyyy")
     private String bDate;
     private City city;
     @JsonProperty("home_phone")

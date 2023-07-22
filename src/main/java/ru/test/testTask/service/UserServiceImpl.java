@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
         List<Long> vkIds = userRepository.findAllVkId();
         List<VkUserDto> vkUserDtoList = apiVkService.getVkUserInfo(vkIds);
         List<User> users = new ArrayList<>();
-        for (VkUserDto vkUserDto: vkUserDtoList) {
+        for (VkUserDto vkUserDto : vkUserDtoList) {
             User user = userRepository.getUserByVkId(vkUserDto.getVkId());
             user.setFirstName(vkUserDto.getFirstName());
             user.setLastName(vkUserDto.getLastName());

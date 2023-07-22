@@ -29,7 +29,6 @@ public class User {
     @Column(name = "user_l_name")
     private String lastName;
 
-//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "d.M.yyyy")
     @Column(name = "user_b_date")
     private String date;
 

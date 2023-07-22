@@ -22,7 +22,6 @@ public class ApiUtils {
     public List<VkUserDto> get(String requestPath) {
         String response = Unirest.get(requestPath)
                 .asJson().getBody().getObject().get("response").toString();
-        System.out.println(response);
         Unirest.shutDown();
         ObjectMapper objectMapper = new ObjectMapper();
         List<VkUserDto> vkUserDto = null;
