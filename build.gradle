@@ -11,6 +11,10 @@ plugins {
 group = 'ru.test.testTask'
 version = '0.0.1-SNAPSHOT'
 
+application {
+	mainClass = 'ru.test.testTast.TestTaskApplication'
+}
+
 java {
 	sourceCompatibility = '17'
 }
