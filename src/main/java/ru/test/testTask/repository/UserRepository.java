@@ -10,7 +10,6 @@ import java.util.List;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    @Async
     @Query("SELECT u.vkId FROM User u")
     List<Long> findAllVkId();
     User getUserByVkId(long vkId);
