@@ -1,8 +1,6 @@
-
-
 databaseChangeLog:
 - changeSet:
-    id: 1689976853513-1
+    id: 1690006865303-1
     author: andreevdan83 (generated)
     changes:
     - createTable:
@@ -20,7 +18,7 @@ databaseChangeLog:
             type: VARCHAR(255)
         - column:
             name: user_b_date
-            type: TIMESTAMP(6)
+            type: VARCHAR(255)
         - column:
             name: user_f_name
             type: VARCHAR(255)
