@@ -1,5 +1,5 @@
 # test-vk-Api
-Данный проект выполнен как тестовое задание на позицию java-developer
+Данный проект выполнен как тестовое задание на позицию java-developer.
 Проект позволяет считать из базы данных id пользователей vk, обратиться к open API Вконтакте и обновить данные в DB.
 Deploy: https://test-vk-api-production.up.railway.app/
 Swagger: https://test-vk-api-production.up.railway.app/swagger-ui/index.html
